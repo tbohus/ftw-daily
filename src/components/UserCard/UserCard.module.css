@@ -1,6 +1,7 @@
 @import '../../styles/propertySets.css';
 
 .root {
+	margin-top: 60px;
 }
 
 .content {
@@ -19,10 +20,10 @@
 
 .heading {
   @apply --marketplaceH2FontStyles;
-  margin: 20px 0 0 0;
+  margin: 0 0 15px 0;
 
   @media (--viewportMedium) {
-    margin: 15px 0 0 0;
+    margin: 0 0 15px 0;
   }
 }
 

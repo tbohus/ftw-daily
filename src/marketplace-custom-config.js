@@ -36,7 +36,7 @@
 export const filters = [
   {
     id: 'dates',
-    label: 'Dates',
+    label: 'Dátum',
     type: 'BookingDateRangeFilter',
     group: 'primary',
     // Note: BookingDateRangeFilter is fixed filter,
@@ -46,7 +46,7 @@ export const filters = [
   },
   {
     id: 'price',
-    label: 'Price',
+    label: 'Cena',
     type: 'PriceFilter',
     group: 'primary',
     // Note: PriceFilter is fixed filter,
@@ -62,7 +62,7 @@ export const filters = [
   },
   {
     id: 'keyword',
-    label: 'Keyword',
+    label: 'Kľúčové slovo',
     type: 'KeywordFilter',
     group: 'primary',
     // Note: KeywordFilter is fixed filter,
@@ -75,7 +75,7 @@ export const filters = [
   },
   {
     id: 'category',
-    label: 'Category',
+    label: 'Kategória',
     type: 'SelectSingleFilter',
     group: 'secondary',
     queryParamNames: ['pub_category'],
@@ -85,16 +85,17 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'smoke', label: 'Smoke' },
-        { key: 'electric', label: 'Electric' },
-        { key: 'wood', label: 'Wood' },
-        { key: 'other', label: 'Other' },
+        { key: 'elektro', label: 'Elektrobicykel' },
+        { key: 'trail', label: 'Trail' },
+        { key: 'road', label: 'Cestný' },
+        { key: 'cross', label: 'Cross-country' },
+        { key: 'city', label: 'Mestský' }
       ],
     },
   },
   {
     id: 'amenities',
-    label: 'Amenities',
+    label: 'Vlastnosti',
     type: 'SelectMultipleFilter',
     group: 'secondary',
     queryParamNames: ['pub_amenities'],
@@ -109,37 +110,39 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         {
-          key: 'towels',
-          label: 'Towels',
+          key: 'fullsuspension',
+          label: 'Celoodpružený rám',
         },
         {
-          key: 'bathroom',
-          label: 'Bathroom',
+          key: 'hardtail',
+          label: 'Hardtail rám',
         },
         {
-          key: 'swimming_pool',
-          label: 'Swimming pool',
+          key: 'flatpedals',
+          label: 'Flat pedále',
         },
         {
-          key: 'own_drinks',
-          label: 'Own drinks allowed',
+          key: 'spdpedals',
+          label: 'SPD pedále',
         },
         {
-          key: 'jacuzzi',
-          label: 'Jacuzzi',
+          key: 'discbrakes',
+          label: 'Diskové brzdy',
         },
         {
-          key: 'audiovisual_entertainment',
-          label: 'Audiovisual entertainment',
+          key: 'telescopiceatspost',
+          label: 'Teleskopická sedlovka',
         },
         {
-          key: 'barbeque',
-          label: 'Barbeque',
+          key: 'carbonframe',
+          label: 'Karbonový rám',
         },
         {
-          key: 'own_food_allowed',
-          label: 'Own food allowed',
-        },
+          key: 'telescopicfork',
+          label: 'Odpružená vidlica',
+        }
+
+           
       ],
     },
   },
@@ -161,14 +164,14 @@ export const sortConfig = {
   conflictingFilters: ['keyword'],
 
   options: [
-    { key: 'createdAt', label: 'Newest' },
-    { key: '-createdAt', label: 'Oldest' },
-    { key: '-price', label: 'Lowest price' },
-    { key: 'price', label: 'Highest price' },
+    { key: 'createdAt', label: 'Najnovšie' },
+    { key: '-createdAt', label: 'Najstaršie' },
+    { key: '-price', label: 'Najlacnejšie' },
+    { key: 'price', label: 'Najdrahšie' },
 
     // The relevance is only used for keyword search, but the
     // parameter isn't sent to the Marketplace API. The key is purely
     // for handling the internal state of the sorting dropdown.
-    { key: 'relevance', label: 'Relevance', longLabel: 'Relevance (Keyword search)' },
+    { key: 'relevance', label: 'Relevancia', longLabel: 'Relevancia (podľa kľúčového slova)' },
   ],
 };

@@ -22,6 +22,8 @@
 }
 
 .sectionImages {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .threeToTwoWrapper {
@@ -29,7 +31,7 @@
   display: block;
   width: 100%;
   position: relative;
-
+  
   @media (--viewportMedium) {
     padding: 0;
   }
@@ -139,7 +141,7 @@
     height: calc(0.41 * 100vw);
     max-height: 50vh;
     object-fit: cover;
-    border-radius: var(--borderRadius);
+    
 
     &:hover {
       transform: scale(1.005);
@@ -160,7 +162,8 @@
   padding: 8px 13px 6px 13px;
 
   /* Colors */
-  background-color: var(--matterColorLight);
+  background-color: var(--marketplaceColor);
+  color: #FFF;
 
   /* Borders */
   border: none;
@@ -170,7 +173,7 @@
   transition: var(--transitionStyleButton);
 
   &:hover {
-    background-color: var(--marketplaceColor);
+    background-color: var(--marketplaceColorDark);
     color: var(--matterColorLight);
   }
 
@@ -286,11 +289,11 @@
 
 .sectionHeading {
   margin-top: 22px;
-  margin-bottom: 34px;
+  margin-bottom: 62px;
 
   @media (--viewportMedium) {
     display: flex;
-    margin-bottom: 31px;
+    margin-bottom: 62px;
   }
 }
 .desktopPriceContainer {
@@ -402,13 +405,13 @@
 .descriptionTitle {
   /* Font */
   @apply --marketplaceH3FontStyles;
-  color: var(--matterColorAnti);
+  color: var(--matterColor);
 
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   @media (--viewportMedium) {
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 36px;
   }
 }
 
@@ -425,13 +428,13 @@
 .featuresTitle {
   /* Font */
   @apply --marketplaceH3FontStyles;
-  color: var(--matterColorAnti);
+  color: var(--matterColor);
 
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   @media (--viewportMedium) {
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 36px;
   }
 }
 
@@ -485,7 +488,7 @@
 
 .reviewsHeading {
   @apply --marketplaceH3FontStyles;
-  color: var(--matterColorAnti);
+  color: var(--matterColor);
 
   margin: 52px 0 20px 0;
 
@@ -512,7 +515,7 @@
 
 .yourHostHeading {
   @apply --marketplaceH3FontStyles;
-  color: var(--matterColorAnti);
+  color: var(--matterColor);
 
   margin: 54px 0 23px 0;
 
