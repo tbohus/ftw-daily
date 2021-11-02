@@ -72,10 +72,19 @@ const UserCard = props => {
   const isCurrentUser =
     ensuredUser.id && ensuredCurrentUser.id && ensuredUser.id.uuid === ensuredCurrentUser.id.uuid;
   const { displayName, bio } = ensuredUser.attributes.profile;
+  
+  
+ const nameOfCompany = ensuredUser.attributes.profile.publicData?.companyName || '';
+
+  
+    
+  
 
   const handleContactUserClick = () => {
     onContactUser(user);
   };
+  
+  
 
   const hasBio = !!bio;
   const classes = classNames(rootClassName || css.root, className);
@@ -127,7 +136,7 @@ const UserCard = props => {
         <div className={css.info}>
           <div className={css.headingRow}>
             <h3 className={css.heading}>
-              <FormattedMessage id="UserCard.heading" values={{ name: displayName }} />
+              <FormattedMessage id="UserCard.heading" values={{ name: nameOfCompany  }} />
             </h3>
             {editProfileDesktop}
           </div>

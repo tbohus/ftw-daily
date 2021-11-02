@@ -7,7 +7,7 @@
 
   width: 100%;
   padding: 24px 24px 42px 24px;
-  background-color: var(--matterColorBright);
+  background-color: var(--matterColor);
 
   @media (--viewportMedium) {
     padding: 0 24px 33px 24px;
@@ -129,6 +129,7 @@
 .organizationDescription,
 .organizationCopyright {
   @apply --marketplaceTinyFontStyles;
+  color: var(--matterColorNegative);
 }
 
 .organizationCopyright {
@@ -136,7 +137,7 @@
 }
 
 .copyrightLink {
-  color: var(--matterColor);
+  color: var(--matterColorLight);
   transition: var(--transitionStyleButton);
 
   &:hover {
@@ -176,7 +177,7 @@
   /* Font */
   @apply --marketplaceH5FontStyles;
   line-height: 20px;
-  color: var(--matterColor);
+  color: #999;
   transition: var(--transitionStyleButton);
 
   margin-top: 0;

@@ -8,9 +8,12 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.module.css';
 
-import helsinkiImage from './images/location_helsinki.jpg';
-import rovaniemiImage from './images/location_rovaniemi.jpg';
-import rukaImage from './images/location_ruka.jpg';
+import liptovImage from './images/location_liptov.jpg';
+import zilinaImage from './images/location_zilina.jpg';
+import tatryImage from './images/location_tatry.jpg';
+import bystricaImage from './images/location_bystrica.jpg';
+import kosiceImage from './images/location_kosice.jpg';
+import bratislavaImage from './images/location_bratislava.jpg';
 
 class LocationImage extends Component {
   render() {
@@ -51,21 +54,30 @@ const SectionLocations = props => {
       </div>
       <div className={css.locations}>
         {locationLink(
-          'Helsinki',
-          helsinkiImage,
-          '?address=Helsinki%2C%20Finland&bounds=60.2978389%2C25.254484899999966%2C59.9224887%2C24.782875800000056&origin=60.16985569999999%2C24.93837910000002'
+          'Liptov',
+          liptovImage,
+          '?address=Liptovský%20Mikuláš%2C%20Žilinský%20kraj%2C%20Slovensko&bounds=49.51858473%2C20.06001372%2C48.67709461%2C19.03949742'
         )}
         {locationLink(
-          'Rovaniemi',
-          rovaniemiImage,
-          '?address=Rovaniemi%2C%20Finland&bounds=67.18452510000002%2C27.32667850000007%2C66.1553745%2C24.736871199999996&origin=66.50394779999999%2C25.729390599999988'
-        )}
+          'Žilina',
+          zilinaImage,
+          '?address=Žilina%2C%20Žilinský%20kraj%2C%20Slovensko&bounds=49.46489081%2C19.02040787%2C49.00199939%2C18.45751018'
+        )} 
         {locationLink(
-          'Ruka',
-          rukaImage,
-          '?address=Ruka%2C%20Finland&bounds=66.1704578%2C29.14246849999995%2C66.1614402%2C29.110453699999994&origin=66.16594940000002%2C29.12646110000003'
+          'Tatry',
+          tatryImage,
+          '?address=Vysoké%20Tatry%2C%20Prešovský%20kraj%2C%20Slovensko&bounds=49.58025143%2C20.47471541%2C48.76459178%2C19.48403741'
+        )} 
+      
+        {locationLink(
+          'Fatra',
+          bystricaImage,
+          '?address=Banská%20Bystrica%2C%20Banskobystrický%20kraj%2C%20Slovensko&bounds=48.804184%2C19.265296%2C48.673598%2C18.99'
         )}
+        
+        
       </div>
+      
     </div>
   );
 };

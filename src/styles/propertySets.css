@@ -22,7 +22,7 @@
   /* Full screen Background image located in root-folder/src/assets */
   --backgroundImage: {
     /* Gradient direction and overlaying the black color on top of the image for better readability */
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    background: /*linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),*/
       url('../../assets/background-1440.jpg');
 
     /* Add loading color for the div */
@@ -90,7 +90,7 @@
   --marketplaceHeroTitleFontStyles: {
     font-weight: var(--fontWeightBold);
     font-size: 36px;
-    line-height: 36px;
+    line-height: 40px;
     letter-spacing: -0.7px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 25px;
@@ -98,7 +98,7 @@
 
     @media (--viewportMedium) {
       font-size: 64px;
-      line-height: 64px;
+      line-height: 70px;
       letter-spacing: -1.5px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 25px;
@@ -152,7 +152,7 @@
   /* ================ H1, H2, H3, H4, H5 & H6 ================ */
 
   --marketplaceH1FontStyles: {
-    font-weight: var(--fontWeightSemiBold);
+    font-weight: var(--fontWeightBold);
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.5px;
@@ -161,9 +161,9 @@
     margin-bottom: 18px;
 
     @media (--viewportMedium) {
-      font-size: 40px;
-      font-weight: var(--fontWeightSemiBold);
-      line-height: 48px;
+      font-size: 32px;
+      font-weight: var(--fontWeightBold);
+      line-height: 38px;
       letter-spacing: -1px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 24px;
@@ -172,15 +172,16 @@
   }
 
   --marketplaceH2FontStyles: {
-    font-weight: var(--fontWeightSemiBold);
-    font-size: 21px;
-    line-height: 24px;
+    font-weight: var(--fontWeightBold);
+    font-size: 24px;
+    line-height: 28px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 21px;
     margin-bottom: 17px;
 
     @media (--viewportMedium) {
-      line-height: 32px;
+	  font-size: 24px;
+      line-height: 28px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 21px;
       margin-bottom: 19px;
@@ -189,7 +190,7 @@
 
   --marketplaceH3FontStyles: {
     font-weight: var(--fontWeightSemiBold);
-    font-size: 18px;
+    font-size: 21px;
     line-height: 24px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 16px;
@@ -770,25 +771,18 @@
   --marketplaceModalCloseText {
     /* Font */
     @apply --marketplaceH6FontStyles;
-    margin: 0;
+    margin: -2.5px 0 0 0;
 
     @media (--viewportMedium) {
-      margin: 0;
+      margin-top: -1px;
     }
   }
 
   --marketplaceModalCloseIcon {
     display: inline-block;
     margin-left: 8px;
-
-    /* Move X icon vertically to align it with the close text. */
-    margin-top: 3px;
-
+    padding: 2px 0 4px;
     box-sizing: content-box;
-
-    @media (--viewportMedium) {
-      margin-top: 2px;
-    }
   }
 
   --marketplaceModalErrorStyles {

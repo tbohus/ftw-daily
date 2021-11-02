@@ -153,7 +153,7 @@ export { default as UserCard } from './UserCard/UserCard';
 //////////////////////////////////////////////
 
 export { default as LayoutWrapperAccountSettingsSideNav } from './LayoutWrapperAccountSettingsSideNav/LayoutWrapperAccountSettingsSideNav';
-export {default as LoadableComponentErrorBoundary } from './LoadableComponentErrorBoundary/LoadableComponentErrorBoundary'
+export { default as LoadableComponentErrorBoundary } from './LoadableComponentErrorBoundary/LoadableComponentErrorBoundary'
 export { default as ModalMissingInformation } from './ModalMissingInformation/ModalMissingInformation';
 export { default as ReviewModal } from './ReviewModal/ReviewModal';
 export { default as PrivacyPolicy } from './PrivacyPolicy/PrivacyPolicy';
@@ -170,6 +170,8 @@ export { default as Footer } from './Footer/Footer';
 export { default as SectionHero } from './SectionHero/SectionHero';
 export { default as SectionHowItWorks } from './SectionHowItWorks/SectionHowItWorks';
 export { default as SectionLocations } from './SectionLocations/SectionLocations';
+export { default as SectionType } from './SectionType/SectionType';
+export { default as SectionRentals } from './SectionRentals/SectionRentals';
 export { default as SectionThumbnailLinks } from './SectionThumbnailLinks/SectionThumbnailLinks';
 export { default as Topbar } from './Topbar/Topbar';
 export { default as TopbarDesktop } from './TopbarDesktop/TopbarDesktop';

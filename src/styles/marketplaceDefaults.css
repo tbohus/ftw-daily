@@ -17,14 +17,14 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #c0392b;
-  --marketplaceColorLight: #ff4c38;
-  --marketplaceColorDark: #8c291e;
+  --marketplaceColor: #00AA48;
+  --marketplaceColorLight: #85E3B0;
+  --marketplaceColorDark: #006B2E;
 
   /* Used with inline CSS SVGs */
-  --marketplaceColorEncoded: %23c0392b;
+  --marketplaceColorEncoded: %2321A95B;
 
-  --successColor: #2ecc71;
+  --successColor: #00AA48;
   --successColorDark: #239954;
   --successColorLight: #f0fff6;
   --failColor: #ff0000;
@@ -35,16 +35,16 @@
   --bannedColorDark: var(--marketplaceColor);
 
   --matterColorDark: #000000;
-  --matterColor: #4a4a4a;
-  --matterColorAnti: #b2b2b2;
+  --matterColor: #222;
+  --matterColorAnti: #999;
   --matterColorNegative: #e7e7e7;
-  --matterColorBright: #fcfcfc;
+  --matterColorBright: #fafafa;
   --matterColorLight: #ffffff;
 
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
   /* ================ Font ================ */
-  --fontFamily: 'poppins', Helvetica, Arial, sans-serif;
+  --fontFamily: Lato, 'poppins', Helvetica, Arial, sans-serif;
 
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
@@ -86,8 +86,8 @@
 
   /* ================ Border radius ================ */
 
-  --borderRadius: 2px;
-  --borderRadiusMobileSearch: 3px;
+  --borderRadius: 8px;
+  --borderRadiusMobileSearch: 4px;
 
   /* ================ Transition styles ================ */
 
@@ -143,9 +143,9 @@
   --TabNav_linkWidth: 240px;
 
   /* ================ LandingPage ================ */
-  --LandingPage_sectionMarginTop: 40px;
-  --LandingPage_sectionMarginTopMedium: 60px;
-  --LandingPage_sectionMarginTopLarge: 94px;
+  --LandingPage_sectionMarginTop: 20px;
+  --LandingPage_sectionMarginTopMedium: 40px;
+  --LandingPage_sectionMarginTopLarge: 40px;
 
   /* ================ EditListingAvailabilityForm, ManageAvailabilityCalendar ================ */
   --ManageAvailabilityCalendar_gridColor: #e0e0e0;
@@ -183,6 +183,11 @@ body {
   color: var(--matterColorLight);
 }
 
+h1,h2,h3,h4,h5, span{
+ font-family: Lato,'poppins', Helvetica, Arial, sans-serif;
+}
+
+
 a {
   @apply --marketplaceLinkStyles;
 }
@@ -206,24 +211,12 @@ h6 {
   @apply --marketplaceH6FontStyles;
 }
 
-input {
-  font-family: var(--fontFamily);
-  font-weight: var(--fontWeightMedium);
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.1px;
-  /* No margins for default font */
-
-  @media (--viewportMedium) {
-    font-size: 16px;
-    line-height: 32px;
-  }
-}
-
+input,
 textarea,
 select,
 li {
   @apply --marketplaceDefaultFontStyles;
+  line-height: 24px;
 }
 
 p,
@@ -292,9 +285,13 @@ textarea {
 
 .fontsLoaded {
   & body {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: Source Sans, 'poppins', Helvetica, Arial, sans-serif;
   }
   & button {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: Source Sans, 'poppins', Helvetica, Arial, sans-serif;
   }
+}
+
+.TopbarDesktop_logoLink__GcD1t{
+	background: #00AA48;
 }

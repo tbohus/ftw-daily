@@ -1,5 +1,5 @@
 .root {
-  fill: var(--matterColor);
+  fill: var(--matterColorNegative);
   transition: var(--transitionStyleButton);
   &:hover {
     fill: var(--marketplaceColor);

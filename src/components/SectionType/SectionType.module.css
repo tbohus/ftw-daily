@@ -6,7 +6,7 @@
   margin-bottom: 62px;
 }
 
-.locations {
+.types {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
@@ -17,7 +17,7 @@
   }
 }
 
-.location {
+.type {
   width: 100%;
   margin-top: 25px;
 
@@ -31,14 +31,14 @@
   }
 }
 
-.location {
+.type {
   @media (--viewportMedium) {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 0;
   }
 }
 
-.location:last-of-type {
+.type:last-of-type {
   @media (--viewportMedium) {
     margin-right: 0;
   }
@@ -66,7 +66,7 @@
   }
 }
 
-.locationImage {
+.typeImage {
   /* Layout - image will take space defined by aspect ratio wrapper */
   position: absolute;
   top: 0;
@@ -80,7 +80,7 @@
 }
 
 .linkText {
-  @apply --marketplaceH2FontStyles;
+  @apply --marketplaceH3FontStyles;
   color: var(--matterColor);
   margin-top: 15px;
   margin-bottom: 0;
@@ -90,6 +90,6 @@
   }
 }
 
-.locationName {
+.typeName {
   color: var(--marketplaceColor);
 }

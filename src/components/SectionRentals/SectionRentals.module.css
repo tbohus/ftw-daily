@@ -1,0 +1,35 @@
+@import '../../styles/propertySets.css';
+
+.title {
+  @apply --marketplaceH1FontStyles;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.rentalContainer{
+	color: #FFF;
+	padding: 30px 60px 50px 60px;
+	background: var(--marketplaceColor);
+	background-image: url(images/rentalImage.png);
+	border-radius:8px;
+}
+
+.rentalContainer p{
+	font-size: 14px;
+	line-height: 24px;
+	max-width: 240px;
+	margin-bottom: 32px;
+}
+
+
+.rentalButton {
+  @apply --marketplaceButtonStyles;
+
+  @media (--viewportMedium) {
+    display: block;
+    width: 180px;
+	background: var(--marketplaceColorDark);
+	color: #FFF;
+  }
+}
+

@@ -5,8 +5,7 @@ import classNames from 'classnames';
 
 import { NamedLink } from '../../components';
 
-import css from './SectionHowItWorks.module.css';
-
+import css from './SectionNewest.module.css';
 
 
 const SectionHowItWorks = props => {
@@ -14,53 +13,40 @@ const SectionHowItWorks = props => {
 
   const classes = classNames(rootClassName || css.root, className);
   return (
-	
-	
-	
     <div className={classes}>
       <div className={css.title}>
         <FormattedMessage id="SectionHowItWorks.titleLineOne" />
       </div>
-	  
+
       <div className={css.steps}>
         <div className={css.step}>
-          <div className={css.label}>1.krok</div>
-          <h3 className={css.stepTitle}>
+          <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part1Title" />
-          </h3>
+          </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part1Text" />
           </p>
         </div>
 
         <div className={css.step}>
-          <div className={css.label}>2.krok</div>
-          <h3 className={css.stepTitle}>
+          <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part2Title" />
-          </h3>
+          </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part2Text" />
           </p>
         </div>
 
         <div className={css.step}>
-          <div className={css.label}>3.krok</div>
-          <h3 className={css.stepTitle}>
+          <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part3Title" />
-          </h3>
+          </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part3Text" />
           </p>
         </div>
       </div>
-      
-      <div className={css.howLink}>
-        <a href={"/ako-to-funguje"}><FormattedMessage id="SectionHowItWorks.linkReadMore" /></a>
-      </div>
-      
-      	
 
-      
     </div>
   );
 };

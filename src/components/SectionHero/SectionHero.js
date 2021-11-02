@@ -17,14 +17,12 @@ const SectionHero = props => {
         <h1 className={css.heroMainTitle}>
           <FormattedMessage id="SectionHero.title" />
         </h1>
-        <h2 className={css.heroSubTitle}>
-          <FormattedMessage id="SectionHero.subTitle" />
-        </h2>
+        
         <NamedLink
           name="SearchPage"
           to={{
             search:
-              'address=Finland&bounds=70.0922932%2C31.5870999%2C59.693623%2C20.456500199999937',
+              'address=Slovensko&bounds=49.6138019844419%2C22.5664559475253%2C47.7312160010548%2C16.8331860011003',
           }}
           className={css.heroButton}
         >
