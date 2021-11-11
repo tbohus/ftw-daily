@@ -127,7 +127,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Turku%2C%20Finland&bounds=60.5304531%2C22.38197820000005%2C60.33361189999999%2C22.066440100000023&origin=60.4518126%2C22.26663020000001',
+                        '?address=Trnava%2C%20Trnavský%20kraj%2C%20Slovensko&bounds=48.427907%2C17.659451%2C48.318644%2C17.487413',
                     }}
                     className={css.link}
                   >
@@ -139,7 +139,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Tampere%2C%20Finland&bounds=61.83657359999999%2C24.118384099999957%2C61.42728169999999%2C23.542201299999988&origin=61.4977524%2C23.760953500000028',
+                        '?address=Nitra%2C%20Nitriansky%20kraj%2C%20Slovensko&bounds=48.385097%2C18.175632%2C48.237778%2C18.000859',
                     }}
                     className={css.link}
                   >
@@ -151,7 +151,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Oulu%2C%20Finland&bounds=65.5643426%2C26.770696000000044%2C64.8443082%2C24.114941999999928&origin=65.0120888%2C25.465077199999996',
+                        '?address=Trenčín%2C%20Trenčiansky%20kraj%2C%20Slovensko&bounds=48.947224%2C18.165197%2C48.849621%2C17.949909',
                     }}
                     className={css.link}
                   >
@@ -163,7 +163,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Rukatunturi%2C%20Kuusamo%2C%20Finland&bounds=66.1699707%2C29.167735499999935%2C66.1609529%2C29.13572069999998&origin=66.1654622%2C29.151728100000014',
+                        '?address=Žilina%2C%20Žilinský%20kraj%2C%20Slovensko&bounds=49.46489081%2C19.02040787%2C49.00199939%2C18.45751018',
                     }}
                     className={css.link}
                   >
@@ -179,7 +179,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Kuopio%2C%20Finland&bounds=63.40340329999999%2C28.457629300000008%2C62.592254%2C26.890028099999995&origin=62.89796999999999%2C27.67817249999996',
+                        '?address=Banská%20Bystrica%2C%20Banskobystrický%20kraj%2C%20Slovensko&bounds=48.804184%2C19.265296%2C48.673598%2C18.996398',
                     }}
                     className={css.link}
                   >
@@ -191,7 +191,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Mikkeli%2C%20Finland&bounds=62.1990357%2C27.900274999999965%2C61.20955799999999%2C26.82762809999997&origin=61.68872709999999%2C27.27214570000001',
+                        '?address=Prešov%2C%20Prešovský%20kraj%2C%20Slovensko&bounds=49.046699%2C21.335441%2C48.945144%2C21.15697',
                     }}
                     className={css.link}
                   >
@@ -203,7 +203,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Espoo%2C%20Finland&bounds=60.3636105%2C24.8505715%2C60.0499087%2C24.499656500000015&origin=60.2054911%2C24.655899999999974',
+                        '?address=Košice%2C%20Košický%20kraj%2C%20Slovensko&bounds=48.824151%2C21.358066%2C48.569812%2C21.119915',
                     }}
                     className={css.link}
                   >
