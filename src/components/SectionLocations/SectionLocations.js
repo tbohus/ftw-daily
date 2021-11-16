@@ -72,7 +72,7 @@ const SectionLocations = props => {
         {locationLink(
           'Fatra',
           bystricaImage,
-          '?address=Banská%20Bystrica%2C%20Banskobystrický%20kraj%2C%20Slovensko&bounds=48.804184%2C19.265296%2C48.673598%2C18.99'
+          '?address=Martin%2C%20Žilinský%20kraj%2C%20Slovensko&bounds=49.32678778%2C19.23273303%2C48.81802069%2C18.59928903'
         )}
         
         
