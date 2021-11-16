@@ -74,8 +74,8 @@ const UserCard = props => {
   const { displayName, bio } = ensuredUser.attributes.profile;
   
   
- const nameOfCompany = ensuredUser.attributes.profile.publicData?.companyName || '';
-
+ const nameOfCompany = ensuredUser.attributes.profile.publicData?.companyName || displayName;
+ 
   
     
   
@@ -136,7 +136,10 @@ const UserCard = props => {
         <div className={css.info}>
           <div className={css.headingRow}>
             <h3 className={css.heading}>
-              <FormattedMessage id="UserCard.heading" values={{ name: nameOfCompany  }} />
+            	
+    <FormattedMessage id="UserCard.heading" values={{ name: nameOfCompany  }} />
+				
+                              
             </h3>
             {editProfileDesktop}
           </div>
