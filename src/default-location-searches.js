@@ -28,5 +28,3 @@ const defaultLocations = [
   
 ];
 export default defaultLocations;
-
-  
