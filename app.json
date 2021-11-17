@@ -6,6 +6,7 @@
   "env": {
     "REACT_APP_MAPBOX_ACCESS_TOKEN": {
       "description": "See: Integrating to map providers documentation https://github.com/sharetribe/ftw-daily/blob/master/docs/map-providers.md"
+      "value:": "pk.eyJ1IjoidGFtYXNib2h1czY2NiIsImEiOiJja3EzdHZhY2QwN3RsMnBtcHR0Nnhobnh6In0.FA6DE_OZ0n-2-SIQ7cyB0A";
     },
     "REACT_APP_SHARETRIBE_SDK_CLIENT_ID": {
       "description": "Client ID (API key). You will find this from the Flex Console."
@@ -18,18 +19,18 @@
     },
     "REACT_APP_SHARETRIBE_MARKETPLACE_CURRENCY": {
       "description": "The currency used in the Marketplace as ISO 4217 currency code. For example: USD, EUR, CAD, AUD, etc.",
-      "value": "USD"
+      "value": "EUR"
     },
     "REACT_APP_CANONICAL_ROOT_URL": {
       "description": "Canonical root url of the marketplace. E.g. https://the-name-of-your-app.herokuapp.com or your actual domain. This is needed for social media sharing and SEO optimization."
     },
     "NODE_ENV": {
       "description": "Node env. Use 'development' for development and 'production' for production.",
-      "value": "production"
+      "value": "development"
     },
     "REACT_APP_ENV": {
       "description": "A more fine grained env definition than NODE_ENV. Is used for example to differentiate envs in logging.",
-      "value": "production"
+      "value": "development"
     },
     "REACT_APP_SHARETRIBE_USING_SSL": {
       "description": "Redirect HTTP to HTTPS?",
