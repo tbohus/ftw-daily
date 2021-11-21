@@ -7,6 +7,8 @@ const { Money } = types;
 const bookingUnitType = 'line-item/day';
 const PROVIDER_COMMISSION_PERCENTAGE = -30;
 
+const CUSTOMER_COMMISSION_PERCENTAGE = -20;
+
 /** Returns collection of lineItems (max 50)
  *
  * Each line items has following fields:
@@ -54,8 +56,16 @@ exports.transactionLineItems = (listing, bookingData) => {
     percentage: PROVIDER_COMMISSION_PERCENTAGE,
     includeFor: ['provider'],
   };
+  
+  const customerCommission = {
+    code: 'line-item/customer-commission',
+    unitPrice: calculateTotalFromLineItems([booking]),
+    percentage: CUSTOMER_COMMISSION_PERCENTAGE,
+    includeFor: ['customer'],
+  };
 
-  const lineItems = [booking, providerCommission];
+
+  const lineItems = [booking, providerCommission, customerCommission ];
 
   return lineItems;
 };
