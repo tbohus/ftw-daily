@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="supported-color-schemes" content="light">
+
+    <!-- For development, pass document through inliner -->
+    
+    {{~#*inline "format-money"~}}
+	{{money-amount money}} {{money.currency}}
+	{{~/inline~}}
+	
+	{{~#*inline "format-date"~}}
+	{{date date format="MMM d, YYYY" tz="Etc/UTC"}}
+	{{~/inline~}}
+
+    <style type="text/css">
+
+		* { margin: 0; padding: 0; font-size: 100%; font-family: 'Avenir Next', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; line-height: 1.65; }
+		
+		img { max-width: 100%; margin: 0 auto; display: block; }
+		
+		body, .body-wrap { width: 100% !important; height: 100%; background: #f8f8f8; }
+		
+		a { color: #71bc37; text-decoration: none; }
+		
+		a:hover { text-decoration: underline; }
+		
+		.text-center { text-align: center; }
+		
+		.text-right { text-align: right; }
+		
+		.text-left { text-align: left; }
+		
+		.button { display: inline-block; color: white; background: #71bc37; border: solid #71bc37; border-width: 10px 20px 8px; font-weight: bold; border-radius: 4px; }
+		
+		.button:hover { text-decoration: none; }
+		
+		h1, h2, h3, h4, h5, h6 { margin-bottom: 40px; line-height: 1.25; }
+		
+		h1 { font-size: 32px; }
+		
+		h2 { font-size: 28px; }
+		
+		h3 { font-size: 24px; }
+		
+		h4 { font-size: 20px; }
+		
+		h5 { font-size: 16px; }
+		
+		p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 40px; }
+		
+		p.small	{	font-size: 13px; font-weight: bold; line-height: 16px;}
+		
+		.container { display: block !important; clear: both !important; margin: 0 auto !important; max-width: 580px !important; }
+		
+		.container table { width: 100% !important; border-collapse: collapse; }
+		
+		.container .masthead { padding: 20px 0; background: #00aa48; color: white; }
+		
+		.container .masthead h1 { margin: 0 auto !important; max-width: 90%; text-transform: uppercase; }
+		
+		.container .content { background: white; padding: 30px 35px; }
+		
+		.container .content.footer { background: none; }
+		
+		.container .content.footer p { margin-bottom: 0; color: #888; text-align: center; font-size: 14px; }
+		
+		.container .content.footer a { color: #888; text-decoration: none; font-weight: bold; }
+		
+		.container .content.footer a:hover { text-decoration: underline; }
+	
+		table {
+	       border-collapse: collapse;
+	     }
+	     .left {
+	       text-align: left;
+	     }
+	     .right {
+	       text-align: right;
+	       padding-left: 20px;
+	     }
+	     .bottom-row > td {
+	       padding-bottom: 5px;
+	     }
+	     .top-row {
+	       border-top: 1px solid #CCC;
+	     }
+	     .top-row > td,
+	     .top-row > th
+	     {
+	       padding-top: 5px;
+	     }
+
+
+    </style>
+</head>
+<body>
+	<table class="body-wrap">
+	    <tr>
+	        <td class="container">
+	
+	            <!-- Message start -->
+	            <table>
+	                <tr>
+	                    <td align="center" class="masthead">
+	
+	                        <img src="http://www.okolo.io/images/logo.jpg">
+	
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td class="content">
+	
+	                        <h2>Tvoja rezervácia bola potvrdená!</h2>
+	
+	                        {{#with transaction}}
+						    <p>{{provider.display-name}} potvrdil tvoju rezerváciu - {{listing.title}} od {{> format-date date=booking.start}} do {{> format-date date=booking.end}}.</p>
+						
+						    <p>Za požičanie si zaplatil tvojou platobnou kartou dokopy {{> format-money money=payin-total}}.</p>
+						
+						    <table>
+						      <thead>
+						        <tr>
+						          <td class="left">Začiatok požičania</td>
+						          <td class="right">Koniec požičania</td>
+						        </tr>
+						        <tr>
+						          <th class="left">{{date booking.start format="EEEE" tz="Etc/UTC"}}</th>
+						          <th class="right">{{date booking.end format="EEEE" tz="Etc/UTC"}}</th>
+						        </tr>
+						        <tr class="bottom-row">
+						          <th class="left">{{date booking.start format="MMM d" tz="Etc/UTC"}}</th>
+						          <th class="right">{{date booking.end format="MMM d" tz="Etc/UTC"}}</th>
+						        </tr>
+						      </thead>
+						      {{#each tx-line-items}}
+						        {{#contains include-for "customer"}}
+						          {{#eq "line-item/night" code}}
+						            {{#if seats}}
+						            <tr class="top-row">
+						              <td colspan="2">{{> format-money money=unit-price}} &times; {{number units}} {{inflect units "night" "nights"}}</td>
+						            </tr>
+						            <tr class="bottom-row">
+						              <td colspan="2">Seats &times; {{number seats}}</td>
+						            </tr>
+						            {{else}}
+						            <tr class="top-row bottom-row">
+						              <td colspan="2">{{> format-money money=unit-price}} &times; {{number quantity}} {{inflect quantity "night" "nights"}}</td>
+						            </tr>
+						            {{/if}}
+						          {{/eq}}
+						        {{/contains}}
+						      {{/each}}
+						      </tbody>
+						      <tfoot>
+						        <tr class="top-row">
+						          <th class="left">Konečná cena </th>
+						          <th class="right">{{> format-money money=payin-total}}</th>
+						        </tr>
+						      </tfoot>
+						    </table>
+						
+						    {{/with}}
+
+	
+	                  
+	                    </td>
+	                </tr>
+	            </table>
+	
+	        </td>
+	    </tr>
+	    <tr>
+	        <td class="container">
+	
+	            <!-- Message start -->
+	            <table>
+	                <tr>
+	                    <td class="content footer" align="center">
+	                        <p>Túto správu sme ti poslali z <a href="https://demo.okolo.io">okolo</a></p>
+	                        <p>V prípade akýchkoľvek problémov nám napíš <a href="mailto:ups@okolo.io">sem</a>.</p>
+	                    </td>
+	                </tr>
+	            </table>
+	
+	        </td>
+	    </tr>
+	</table>
+</body>
+</html>
