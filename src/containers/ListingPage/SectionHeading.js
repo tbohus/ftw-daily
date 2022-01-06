@@ -41,10 +41,10 @@ const SectionHeading = props => {
         <h1 className={css.title}>{richTitle}</h1>
         <div className={css.author}>
           {category}
-          <FormattedMessage id="ListingPage.hostedBy" values={{ name: hostLink }} />
+          
           {showContactUser ? (
             <span className={css.contactWrapper}>
-              <span className={css.separator}>•</span>
+              
               <InlineTextButton
                 rootClassName={css.contactLink}
                 onClick={onContactUser}

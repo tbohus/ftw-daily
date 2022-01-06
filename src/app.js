@@ -12,11 +12,13 @@ import { Provider } from 'react-redux';
 import difference from 'lodash/difference';
 import mapValues from 'lodash/mapValues';
 import moment from 'moment';
+import 'moment/locale/sk';
 import { IntlProvider } from './util/reactIntl';
 import configureStore from './store';
 import routeConfiguration from './routeConfiguration';
 import Routes from './Routes';
 import config from './config';
+import messagesInLocale from './translations/sk.json';
 
 // Flex template application uses English translations as default.
 import defaultMessages from './translations/sk.json';
@@ -40,7 +42,7 @@ import defaultMessages from './translations/sk.json';
 // If you are using a non-english locale, point `messagesInLocale` to correct .json file.
 // Remove "const messagesInLocale" and add import for the correct locale:
 // import messagesInLocale from './translations/fr.json';
-const messagesInLocale = {};
+
 
 // If translation key is missing from `messagesInLocale` (e.g. fr.json),
 // corresponding key will be added to messages from `defaultMessages` (en.json)

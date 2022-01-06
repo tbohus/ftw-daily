@@ -147,7 +147,7 @@ export const queryUserReviews = userId => (dispatch, getState, sdk) => {
     .query({
       subject_id: userId,
       state: 'public',
-      include: ['author', 'author.profileImage'],
+      include: ['author', 'author.profileImage', 'author.profile.publicData'],
       'fields.image': ['variants.square-small', 'variants.square-small2x'],
     })
     .then(response => {

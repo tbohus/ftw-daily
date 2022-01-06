@@ -5,7 +5,7 @@ const { Money } = types;
 // This bookingUnitType needs to be one of the following:
 // line-item/night, line-item/day or line-item/units
 const bookingUnitType = 'line-item/day';
-const CUSTOMER_COMMISSION_PERCENTAGE = 20;
+const CUSTOMER_COMMISSION_PERCENTAGE = 15;
 
 /** Returns collection of lineItems (max 50)
  *

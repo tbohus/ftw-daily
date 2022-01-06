@@ -16,6 +16,7 @@ const i18n = {
     ...
     6: Saturday
   */
+  
   firstDayOfWeek: 1,
 };
 

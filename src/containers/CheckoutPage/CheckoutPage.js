@@ -769,7 +769,7 @@ export class CheckoutPageComponent extends Component {
               <div className={css.author}>
                 <FormattedMessage
                   id="CheckoutPage.hostedBy"
-                  values={{ name: currentAuthor.attributes.profile.displayName }}
+                  values={{ name: currentAuthor.attributes.profile.publicData?.companyName }}
                 />
               </div>
             </div>
