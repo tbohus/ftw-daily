@@ -10,6 +10,7 @@ import {
   Page,
   SectionHero,
   SectionHowItWorks,
+  SectionMap,
   SectionLocations,
   SectionRentals,
   SectionType,
@@ -79,7 +80,7 @@ export const LandingPageComponent = props => {
               </div>
             </li>
             
-             <li className={css.section}>
+            <li className={css.section}>
               <div className={css.divider}></div>
             </li>          
           
@@ -92,6 +93,14 @@ export const LandingPageComponent = props => {
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionRentals />
+              </div>
+            </li>
+            
+            
+            
+            <li className={css.section}>
+              <div className={css.sectionContent}>
+                <SectionMap />
               </div>
             </li>
           

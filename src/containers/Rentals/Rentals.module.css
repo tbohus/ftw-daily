@@ -1,0 +1,119 @@
+@import '../../styles/customMediaQueries.css';
+@import '../../styles/propertySets.css';
+
+.pageTitle {
+  text-align: center;
+}
+
+.staticPageWrapper {
+  width: calc(100% - 48px);
+  max-width: 1056px;
+  margin: 24px auto;
+
+  @media (--viewportMedium) {
+    width: calc(100% - 72px);
+    margin: 72px auto;
+  }
+}
+
+.coverImage {
+  width: 100%;
+  height: 528px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 32px 0 40px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (--viewportMedium) {
+    flex-wrap: nowrap;
+  }
+}
+
+
+.contentSide {
+  font-style: italic;
+
+  @media (--viewportMedium) {
+    width: 193px;
+    margin-right: 103px;
+    margin-top: 8px;
+  }
+}
+
+.contentMain {
+  width: 90%;
+
+  @media (--viewportMedium) {
+    max-width: 650px;
+  }
+}
+
+.subtitle {
+  @apply --marketplaceH3FontStyles;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.RentalsListIntro{
+	margin: 36px 0;
+}
+
+
+.RentalsListState{
+	margin-bottom: 72px;
+	border-bottom: 1px solid #cacaca;
+}
+
+.ListWrapper{
+	padding: 72px 0;
+}
+
+
+.RentalsList{
+	display: flex;
+	flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+
+}
+
+.RentalsSingle{
+	border-radius: 8px;
+	margin-bottom: 40px;
+	padding: 20px 30px;
+	border: 1px solid #efefef;
+	 @media (--viewportMedium) {
+    width: 324px;
+    margin-right: 40px;
+  }
+  
+  &:hover {
+    transform: scale(1.02);
+    background: #FFF;
+    box-shadow: var(--boxShadowSectionLocationHover);
+  }
+
+}
+
+.RentalsSingle:nth-child(3n){
+	margin-right: 0;
+}
+
+.RentalsSingle h3{
+	color: var(--marketplaceColor);
+	margin-bottom: 36px;
+}
+
+.RentalsSingle h4{
+	font-size:16px;
+	font-family: 'Rubik', Helvetica, Arial;
+	font-weight: bold;
+}

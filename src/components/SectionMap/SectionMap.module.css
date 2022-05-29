@@ -1,0 +1,26 @@
+@import '../../styles/propertySets.css';
+
+.title {
+  @apply --marketplaceH1FontStyles;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.bigMap{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  border-radius: 0;
+
+}
+
+
+iframe{
+	border: 0;
+	min-height: 600px;
+	height: 100%;
+	width: 100%;
+}      
+ 

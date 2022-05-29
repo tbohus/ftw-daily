@@ -131,6 +131,8 @@ const TopbarDesktop = props => {
       </span>
     </NamedLink>
   );
+  
+  
 
   return (
     <nav className={classes}>
@@ -142,6 +144,11 @@ const TopbarDesktop = props => {
         />
       </NamedLink>
       {search}
+      <NamedLink className={css.createListingLink} name="Rentals">
+        <span className={css.createListing}>
+          Mapa cyklopožičovní
+        </span>
+      </NamedLink>
       <NamedLink className={css.createListingLink} name="NewListingPage">
         <span className={css.createListing}>
           <FormattedMessage id="TopbarDesktop.createListing" />
