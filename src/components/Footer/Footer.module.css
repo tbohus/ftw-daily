@@ -223,6 +223,7 @@
 
 /* Desktop: extra links (social media links and legal links) */
 .extraLinks {
+
   flex-shrink: 0;
   order: 5;
   display: none;
@@ -242,10 +243,11 @@
 
 .legalMatters {
   /* Get extra space from parent element (which is using flexbox) */
+  
   flex-grow: 1;
 
   /* Layout */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-end;
 }
