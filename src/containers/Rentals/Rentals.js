@@ -192,10 +192,7 @@ import RentalsList from './RentalsList.json'
 	    <div>
 		    <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 		        	<a className={css.offset} id="bratislavsky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Bratislavskom kraji</h2>
 		        </div> 
 		        
@@ -206,10 +203,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="trnavsky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Trnavskom kraji</h2>
 		        </div> 
 		        
@@ -220,10 +214,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="nitriansky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Nitrianskom kraji</h2>
 		        </div> 
 		        
@@ -234,10 +225,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="trenciansky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Trenčianskom kraji</h2>
 		        </div> 
 		        
@@ -248,10 +236,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="banskobystricky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Banskobystrickom kraji</h2>
 		        </div> 
 		        
@@ -262,10 +247,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="zilinsky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Žilinskom kraji</h2>
 		        </div> 
 		        
@@ -276,10 +258,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="presovsky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Prešovskom kraji</h2>
 		        </div> 
 		        
@@ -291,10 +270,7 @@ import RentalsList from './RentalsList.json'
 	        
 	        <div>
 			    <div className={css.RentalsListState}>
-<<<<<<< HEAD
 			    	<a className={css.offset} id="kosicky-kraj"></a>
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 		        	<h2>Požičovne v Košickom kraji</h2>
 		        </div> 
 		        
@@ -336,7 +312,6 @@ const Rentals = () => {
          
          <div className={css.RentalsListIntro}>
 			
-<<<<<<< HEAD
 			<p>Aj keď sa to zdá byť ľahké, nájsť tú najbližšiu požičovňu bicyklov môže byť celkom náročná úloha. Preto sme ti pozbierali všetky miesta na Slovensku kde si môžeš požičať bicykel alebo elektrobicykel. Tento zoznam slúži iba informačne, preto doporučujeme overiť dostupnosť bicyklov vopred, pred návštevou obchodu.</p>
 			
         </div>
@@ -378,9 +353,6 @@ const Rentals = () => {
         	</div>
         	
         
-=======
-			<p>Aj keď sa to zdá byť ľahké, nájsť tú najbližšiu požičovňu bicyklov môže byť celkom náročná úloha. Preto sme ti pozbierali všetky miesta na Slovensku kde si môžeš požičať bicykel alebo elektrobicykel.(Prepáčte vodné bicykle, vy ešte musíte počkať.) Tento zoznam slúži len informačne a skladá sa z voľne dostupných dát na internete. Preto za poskytnuté služby týchto požičovní nemôžeme ručiť. Ak chceš ísť na istotu, vyber si bicykel na okolo.</p>
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
         </div>
           
 		<SectionMap />

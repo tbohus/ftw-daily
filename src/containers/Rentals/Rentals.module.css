@@ -1,13 +1,10 @@
 @import '../../styles/customMediaQueries.css';
 @import '../../styles/propertySets.css';
 
-<<<<<<< HEAD
 html{
 	scroll-behavior: smooth !important;
 }
 
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 .pageTitle {
   text-align: center;
 }
@@ -79,7 +76,6 @@ html{
 	padding: 72px 0;
 }
 
-<<<<<<< HEAD
 .LocationsList a{
 	text-decoration: none;
 	color: #FFF;
@@ -102,25 +98,16 @@ a.offset{
 
 
 .RentalsList, .LocationsList{
-=======
-
-.RentalsList{
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 	display: flex;
 	flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 40px;
-<<<<<<< HEAD
-=======
-
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
   @media (--viewportMedium) {
     flex-direction: row;
   }
 
 }
 
-<<<<<<< HEAD
 .LocationsSingle{
 	border-radius: 8px;
 	margin-bottom: 1.3%;
@@ -145,8 +132,6 @@ a.offset{
 
 
 
-=======
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 .RentalsSingle{
 	border-radius: 8px;
 	margin-bottom: 40px;
@@ -165,11 +150,7 @@ a.offset{
 
 }
 
-<<<<<<< HEAD
 .RentalsSingle:nth-child(3n), .LocationsSingle:nth-child(4n){
-=======
-.RentalsSingle:nth-child(3n){
->>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 	margin-right: 0;
 }
 
