@@ -7857,7 +7857,11 @@ locate-path@^5.0.0:
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+<<<<<<< HEAD
   integrity sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==
+=======
+  integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+>>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -7892,7 +7896,11 @@ lodash.merge@^4.6.2:
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
+<<<<<<< HEAD
   integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
+=======
+  integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+>>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 
 lodash.template@^4.5.0:
   version "4.5.0"

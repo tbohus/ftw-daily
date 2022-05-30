@@ -24,7 +24,11 @@ const SectionMap = props => {
         <FormattedMessage id="SectionMap.titleLineOne" />
       </div>
       
+<<<<<<< HEAD
 	  <div className={css.bigMap}><iframe height="100" src="http://map.1155.sk/map.html"></iframe></div>
+=======
+	  <div className={css.bigMap}><iframe height="100" src="https://map.1155.sk/map.html"></iframe></div>
+>>>>>>> f0c6da720bb73a5e738a9e1c1f6f592ea43660fb
 	  
     </div>
 	
